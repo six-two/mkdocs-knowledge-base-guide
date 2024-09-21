@@ -1,0 +1,10 @@
+{
+    "installCommand": "python3 -m ensurepip; python3 -m pip install -r requirements.txt",
+    "buildCommand": "python3 -m mkdocs build",
+    "outputDirectory": "site",
+    "routes": [
+    ],
+    "github": {
+        "silent": true
+    }
+}

@@ -1,0 +1,5 @@
+# The output directory of mkdocs
+site/
+
+# The python virtual environment
+venv/
