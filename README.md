@@ -3,6 +3,8 @@
 This guide aims to show you how to publish your knowledge base with MkDocs.
 It mainly describes my setup, so it focuses on extensions I personally use or created for my knowledge base.
 
+You can read the guide at <https://mkdocs-knowledge-base-guide.six-two.dev/> or you can clone this repository and serve it with mkdocs.
+
 ## MkDocs advantages
 
 - Actively developed

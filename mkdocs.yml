@@ -1,3 +1,7 @@
 site_name: MkDocs Knowledge Base Guide
 theme:
   name: material
+
+plugins:
+- search
+- awesome-pages

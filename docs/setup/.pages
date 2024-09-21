@@ -1,0 +1,4 @@
+nav:
+    - quickstart.md
+    - dependency-pinning.md
+    - vercel-ci-cd.md

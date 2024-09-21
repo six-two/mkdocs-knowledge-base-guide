@@ -1,17 +1,22 @@
-# Welcome to MkDocs
+# Introduction
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This guide aims to show you how to publish your knowledge base with MkDocs.
+It mainly describes my setup, so it focuses on extensions I personally use or created for my knowledge base.
 
-## Commands
+You can read the guide at <https://mkdocs-knowledge-base-guide.six-two.dev/> or you can clone this repository and serve it with mkdocs.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## MkDocs advantages
 
-## Project layout
+- Actively developed
+- Creates a static site that can be hosted anywhere cheaply (or even for free)
+- Has a fully client side search function
+- Has really great Material theme and many other plugins
+- Writing small custom extensions is relativly easy, since it can be done in Python.
+    The [hooks](https://www.mkdocs.org/user-guide/configuration/#hooks) option also enables writing custom hooks without creating all the boilerplate code that a "propper" extension needs.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## MkDocs Drawbacks
+
+MkDocs processes all sites sequentially.
+This can lead to slow build performace, which makes the live reloading nearly unusable in my opinion.
+For my personal knowlege base, which contains over 700 pages with over 39k lines in total and uses many plugins, the build process takes around 40 seconds on a M3 Macbook.
+In the CI/CD pipeline, the build takes much longer.
