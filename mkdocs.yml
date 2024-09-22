@@ -1,9 +1,34 @@
 site_name: MkDocs Knowledge Base Guide
-theme:
-  name: material
 
 plugins:
 - search
 - awesome-pages
 - badges
 - ezlinks
+- autotag:
+    globs:
+      "plugins/**": "Plugin"
+      "plugins/material/**": "Material for MkDocs"
+      "setup/**": "Setup"
+- tags:
+    tags_file: plugins/material/tags.md
+
+theme:
+  name: material
+  # Custom tag icons: https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#tag-icons-and-identifiers
+  icon:
+    # Associating tag IDs with icons
+    tag:
+      author: octicons/person-fill-24
+      default: material/tag
+      folder: material/folder
+      material: material/library
+      plugin: material/puzzle
+extra:
+  # Associating the tags with the tag IDs
+  tags:
+    "Material for MkDocs": material
+    Plugin: plugin
+    Setup: folder
+    "Written by me": author
+
