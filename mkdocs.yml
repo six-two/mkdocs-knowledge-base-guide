@@ -5,3 +5,5 @@ theme:
 plugins:
 - search
 - awesome-pages
+- badges
+- ezlinks

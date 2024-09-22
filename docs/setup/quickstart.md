@@ -1,4 +1,8 @@
-# Quickstart
+# MkDocs quickstart
+
+L|Homepage|https://www.mkdocs.org/|
+I|pypi|mkdocs|
+I|github|mkdocs/mkdocs|
 
 This is designed to get you up and running as quick as possible.
 
