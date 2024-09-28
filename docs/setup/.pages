@@ -1,6 +1,7 @@
 nav:
     - quickstart.md
     - dependency-pinning.md
+    - docker.md
     - vercel-ci-cd.md
     - check-for-real-ip-addresses-and-hostnames.md
     - download.md
