@@ -1,4 +1,4 @@
-site_name: MkDocs Knowledge Base Guide
+site_name: Knowledge Base
 
 plugins:
 - search

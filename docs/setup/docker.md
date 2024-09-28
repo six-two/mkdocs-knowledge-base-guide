@@ -9,6 +9,7 @@ There are multiple reasons, why you may want to use mkdocs in docker instead of 
 ## Dockerfile
 
 For this project I have built a simple somewhat reusable container, which you can use as a starting point.
+
 The Dockerfile can be very simple:
 ```Dockerfile
 FROM python:slim
@@ -32,7 +33,12 @@ Basically your Dockerfile:
 
 ## Build container
 
-If you want to use my docker image, use the `Dockerfile` in the root of this repository:
+If you want to use my docker image, you can use the version hosted in the GitHub container registry:
+```bash
+docker pull ghcr.io/six-two/mkdocs-knowledge-base-guide
+```
+
+You can also use the `Dockerfile` in the root of this repository:
 ```bash
 docker build --platform linux/amd64 -t knowledge-base-container .
 ```

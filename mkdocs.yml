@@ -1,34 +1,43 @@
-site_name: MkDocs Knowledge Base Guide
+extra:
+    # Associating the tags with the tag IDs
+    tags:
+        "Material for MkDocs": material
+        Plugin: plugin
+        Setup: folder
+        "Written by me": author
 
 plugins:
-- search
-- awesome-pages
-- badges
-- ezlinks
 - autotag:
     globs:
-      "plugins/**": "Plugin"
-      "plugins/material/**": "Material for MkDocs"
-      "setup/**": "Setup"
+        "plugins/**": "Plugin"
+        "plugins/material/**": "Material for MkDocs"
+        "setup/**": "Setup"
+- awesome-pages
+- badges
+- extract_listings:
+    javascript_search_file: assets/js/listing-search-plugin.js
+- ezlinks
+- minify:
+    htmlmin_opts:
+        remove_comments: true
+    minify_css: true
+    minify_html: true
+    minify_js: false
+- search
 - tags:
     tags_file: plugins/material/tags.md
 
+site_name: MkDocs Knowledge Base Guide
+
 theme:
-  name: material
-  # Custom tag icons: https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#tag-icons-and-identifiers
-  icon:
-    # Associating tag IDs with icons
-    tag:
-      author: octicons/person-fill-24
-      default: material/tag
-      folder: material/folder
-      material: material/library
-      plugin: material/puzzle
-extra:
-  # Associating the tags with the tag IDs
-  tags:
-    "Material for MkDocs": material
-    Plugin: plugin
-    Setup: folder
-    "Written by me": author
+    name: material
+    # Custom tag icons: https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#tag-icons-and-identifiers
+    icon:
+        # Associating tag IDs with icons
+        tag:
+            author: octicons/person-fill-24
+            default: material/tag
+            folder: material/folder
+            material: material/library
+            plugin: material/puzzle
 

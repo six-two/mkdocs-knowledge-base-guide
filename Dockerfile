@@ -1,3 +1,4 @@
+# Reminder @ME: The ghcr.io image only gets updated, when you push a new tag
 FROM python:slim
 
 # Install my dependencies (mkdocs plugins)

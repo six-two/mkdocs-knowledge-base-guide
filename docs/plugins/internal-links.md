@@ -11,6 +11,17 @@ Plugins like ezlinks enable you to do linking with just the file name (so `quick
 Thay means that you save a lot of time updating broken links when you move a file or rename a directory.
 Some also support wiki links syntax, which looks like `[[quickstart]]` and saves you even more typing.
 
+## ezlinks
+
 I use ezlinks and it works, but it seems no longer maintained.
 So I recommend you do your own research for a good linking plugin.
 You can check in the [Links & references](https://github.com/mkdocs/catalog?tab=readme-ov-file#-links--references) section of the plugin catalog.
+
+Usually I enable the additional linking types:
+```yaml
+plugins:
+- ezlinks:
+      warn_ambiguities: true
+      wikilinks: true
+      reference_links: true
+```
