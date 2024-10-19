@@ -7,9 +7,11 @@ I|github|mkdocs/mkdocs|
 This is designed to get you up and running as quick as possible.
 
 1. Install mkdocs:
+
     ```bash
     pip install mkdocs
     ```
+
 2. Create a new mkdocs project:
     ```bash
     mkdocs new .

@@ -1,3 +1,6 @@
 - backlinks plugin?
 - implement leaks check and download script
 - finish plugins listing
+- update mkdocs.yml
+    - update docker image default mkdocs.yml
+- write some hooks that add pages for pagetree, extract-listings, etc
