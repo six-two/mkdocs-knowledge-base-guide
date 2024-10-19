@@ -1,5 +1,8 @@
 # extract-listings
 
+I|pypi|mkdocs-extract-listings-plugin|
+I|github|six-two/mkdocs-extract-listings-plugin|
+
 This plugin allows you to search only your code listings for specific works or substrings.
 It can also show you all your code listings on a single page.
 I wrote it after the normal search stopped being accurate after my knowlege base grew too much.

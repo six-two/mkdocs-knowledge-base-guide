@@ -1,4 +1,7 @@
-# encrypt source
+# encrypt-source
+
+I|pypi|mkdocs-encrypt-source-plugin|
+I|github|six-two/mkdocs-encrypt-source-plugin|
 
 This may not be useful to most of you.
 I wrote it, so that certain information is stored encrypted, so that GitHub / GitLab will not be able to scan it.

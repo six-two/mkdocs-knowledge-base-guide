@@ -1,6 +1,5 @@
 # Plugins - Internal Links
 
-I|pypi|mkdocs-ezlinks-plugin|
 L|Plugins for links & references|https://github.com/mkdocs/catalog?tab=readme-ov-file#-links--references|
 
 There are many plugins that simplify the linking of pages in mkdocs.
@@ -12,6 +11,9 @@ Thay means that you save a lot of time updating broken links when you move a fil
 Some also support wiki links syntax, which looks like `[[quickstart]]` and saves you even more typing.
 
 ## ezlinks
+
+I|pypi|mkdocs-ezlinks-plugin|
+I|github|orbikm/mkdocs-ezlinks-plugin|
 
 I use ezlinks and it works, but it seems no longer maintained.
 So I recommend you do your own research for a good linking plugin.

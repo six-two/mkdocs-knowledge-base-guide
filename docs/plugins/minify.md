@@ -1,5 +1,8 @@
 # minify
 
+I|pypi|mkdocs-minify-plugin|
+I|github|byrnereese/mkdocs-minify-plugin|
+
 The `minify` plugin can make your pages smaller, which makes them load slightly faster.
 
 When you view the HTML page that (Material for) MkDocs generates, you will see a lot of lines just containing white space, lots of (wrong) indentation, etc:

@@ -31,6 +31,20 @@ Basically your Dockerfile:
     This is only needed of you want to mount folders without a `mkdocs.yml`.
 4. Executes `mkdocs serve` or `mkdocs build` when you start the container.
 
+For hardening purposes you may not want to run `mkdocs` or `pip install` as root inside the container.
+To accomplish this, you can crate a new user in the container and run all commands as that user:
+```Dockerfile
+FROM python:slim
+RUN useradd --create-home app --uid 1001
+USER 1001:1001
+COPY requirements.txt /tmp/
+RUN pip install --user --no-warn-script-location --no-cache-dir -r /tmp/requirements.txt
+COPY default-mkdocs.yml /share/mkdocs.yml
+WORKDIR /share
+ENTRYPOINT ["/home/app/.local/bin/mkdocs"]
+CMD ["serve", "--dev-addr", "0.0.0.0:8000"]
+```
+
 ## Build container
 
 If you want to use my docker image, you can use the version hosted in the GitHub container registry:
@@ -40,7 +54,7 @@ docker pull ghcr.io/six-two/mkdocs-knowledge-base-guide
 
 You can also use the `Dockerfile` in the root of this repository:
 ```bash
-docker build --platform linux/amd64 -t knowledge-base-container .
+docker build --platform linux/amd64 -t ghcr.io/six-two/mkdocs-knowledge-base-guide .
 ```
 
 !!! note "ARM issues"
@@ -57,23 +71,23 @@ docker build --platform linux/amd64 -t knowledge-base-container .
 To serve any folder of Markdown files with the default `mkdocs.yml` from the container just mount the Markdown files into the correct location in the container:
 
 ```bash
-docker run --rm -it -p 8000:8000 -v "$PWD/docs:/share/docs:ro" knowledge-base-container
+docker run --rm -it -p 8000:8000 -v "$PWD/docs:/share/docs:ro" ghcr.io/six-two/mkdocs-knowledge-base-guide
 ```
 
 If you have custom settings, you also want to mount the `mkdocs.yml` and maybe some other files.
 In this case mount the whole root folder of your mkdocs project into the correct location in the container:
 ```bash
-docker run --rm -it -p 8000:8000 -v "$PWD:/share:ro" knowledge-base-container
+docker run --rm -it -p 8000:8000 -v "$PWD:/share:ro" ghcr.io/six-two/mkdocs-knowledge-base-guide
 ```
 
 ## Build web site
 
 If you want to build the page, you need to mount the `/share` directory with read write, since the output files need to be written to it:
 ```bash
-docker run --rm -it -v "$PWD:/share" knowledge-base-container build
+docker run --rm -it -v "$PWD:/share" ghcr.io/six-two/mkdocs-knowledge-base-guide build
 ```
 
 Or if you just mount the notes into the image, you also need to mount a folder for the output files:
 ```bash
-docker run --rm -it -v "$PWD/docs:/share/docs:ro" -v "$PWD/site:/share/site" knowledge-base-container build
+docker run --rm -it -v "$PWD/docs:/share/docs:ro" -v "$PWD/site:/share/site" ghcr.io/six-two/mkdocs-knowledge-base-guide build
 ```
