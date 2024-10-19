@@ -14,6 +14,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.keys
+
 
 plugins:
 - autotag:
@@ -33,6 +35,7 @@ plugins:
     minify_html: true
     minify_js: false
 - pagetree
+- placeholder
 - search
 - tags:
     tags_file: plugins/material/tags.md
@@ -43,6 +46,7 @@ site_name: MkDocs Knowledge Base Guide
 
 theme:
     name: material
+    custom_dir: overrides
     features:
     - navigation.tabs
     - content.code.copy

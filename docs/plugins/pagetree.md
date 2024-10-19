@@ -3,7 +3,7 @@
 I|pypi|mkdocs-pagetree-plugin|
 I|github|tombreit/mkdocs-pagetree-plugin|
 
-When your knowlege base grows, finding a page via the search box can get harder.
+When your knowledge base grows, finding a page via the search box can get harder.
 Navigating through multiple layers of folders also is not easy.
 For this reason I like to create a page that lists all my pages and where they are.
 You can then for example use your browser's find in page (++ctrl+f++) to quickly find the page by its title.

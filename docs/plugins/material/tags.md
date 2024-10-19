@@ -24,7 +24,7 @@ plugins:
     tags_file: plugins/material/tags.md
 ```
 
-... and then use the `TAGS` placeholder sureounded by curly brackets (like `[TAGS ]` but without the space) where the plugin should insert the list.
+... and then use the `TAGS` placeholder surrounded by curly brackets (like `[TAGS ]` but without the space) where the plugin should insert the list.
 
 ## Custom icons
 

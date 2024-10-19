@@ -1,0 +1,4 @@
+settings:
+  auto_placeholder_tables: false
+placeholders:
+  WLAN_INTERFACE: wlan0

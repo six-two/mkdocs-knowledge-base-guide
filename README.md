@@ -11,12 +11,12 @@ You can read the guide at <https://mkdocs-knowledge-base-guide.six-two.dev/> or 
 - Creates a static site that can be hosted anywhere cheaply (or even for free)
 - Has a fully client side search function
 - Has really great Material theme and many other plugins
-- Writing small custom extensions is relativly easy, since it can be done in Python.
-    The [hooks](https://www.mkdocs.org/user-guide/configuration/#hooks) option also enables writing custom hooks without creating all the boilerplate code that a "propper" extension needs.
+- Writing small custom extensions is relatively easy, since it can be done in Python.
+    The [hooks](https://www.mkdocs.org/user-guide/configuration/#hooks) option also enables writing custom hooks without creating all the boilerplate code that a "proper" extension needs.
 
 ## MkDocs Drawbacks
 
 MkDocs processes all sites sequentially.
-This can lead to slow build performace, which makes the live reloading nearly unusable in my opinion.
-For my personal knowlege base, which contains over 700 pages with over 39k lines in total and uses many plugins, the build process takes around 40 seconds on a M3 Macbook.
+This can lead to slow build performance, which makes the live reloading nearly unusable in my opinion.
+For my personal knowledge base, which contains over 700 pages with over 39k lines in total and uses many plugins, the build process takes around 40 seconds on a M3 Macbook.
 In the CI/CD pipeline, the build takes much longer.

@@ -3,8 +3,8 @@
 L|MkDocs plugin (developer) guide|https://www.mkdocs.org/dev-guide/plugins/|
 L|MkDocs plugin catalog|https://github.com/mkdocs/catalog|
 
-In my opinion one of the greatest strengths of MkDocs is its extensability using plugins.
-There is a big and growning list of plugins available.
+In my opinion one of the greatest strengths of MkDocs is its extensibility using plugins.
+There is a big and growing list of plugins available.
 And if what you are looking for is missing (and not a complex problem), you can write a custom hook that implements it or ask ChatGPT/Phind to write it for you.
 
 The following pages detail plugins I find helpful, but there are many more available at <https://github.com/mkdocs/catalog>.

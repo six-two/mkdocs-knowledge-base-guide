@@ -1,0 +1,51 @@
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+
+plugins:
+- autotag:
+    globs:
+        "plugins/**": "Plugin"
+        "plugins/material/**": "Material for MkDocs"
+        "setup/**": "Setup"
+- awesome-pages
+- ezlinks
+- placeholder
+- badges
+- search
+- tags:
+    tags_file: plugins/material/tags.md
+- spellcheck:
+    # Reminder: if you change backends, include the backends in requirements.in and rebuild requirements.txt
+    backends:
+    - symspellpy  # as strings
+    # - codespell:  # or nested configs
+    #     dictionaries: [clear, rare]
+    known_words: ../known_words.txt # path is relative from docs/ dir
+    ignore_code: yes
+    # minimum length of words to consider
+    min_length: 2
+    # maximum number of capital letters in a word
+    max_capital: 1
+    # keep unicode characters
+    allow_unicode: no
+    skip_files: 
+    - tags.md
+
+
+repo_url: https://github.com/six-two/mkdocs-knowledge-base-guide
+
+site_name: MkDocs Knowledge Base Guide
+
+theme:
+    name: material
+    custom_dir: overrides
+    features:
+    - navigation.tabs
+    - content.code.copy

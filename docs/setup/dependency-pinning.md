@@ -4,7 +4,7 @@ I|pypi|pip-tools|
 I|github|jazzband/pip-tools|
 
 Python packages should be pinned to ensure that a build that works for you today will also keep working in a year.
-Not pinning dependencies will cause others and your CI/CD pipeline to use the latest version of all dependencies, which can cause build to unexpectedly fail or introduce bugs in the deployed website that do not heppen in your local setup.
+Not pinning dependencies will cause others and your CI/CD pipeline to use the latest version of all dependencies, which can cause build to unexpectedly fail or introduce bugs in the deployed website that do not happen in your local setup.
 
 I like to use `pip-compile` from the `pip-tools` package.
 It can be installed with pip or pipx:
