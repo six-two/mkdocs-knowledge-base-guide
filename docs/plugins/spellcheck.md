@@ -1,5 +1,8 @@
 # spellcheck
 
+I|pypi|mkdocs-spellcheck|
+I|github|pawamoy/mkdocs-spellcheck|
+
 My spelling isn't always the greatest, so it can be useful to add a plugin that checks my spelling.
 It is somewhat limited as it does not check grammar, but it usually spots quite a lot of typos and supports a ignore list to stop it from complaining about false positives.
 
