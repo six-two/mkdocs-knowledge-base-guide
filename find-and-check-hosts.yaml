@@ -1,0 +1,34 @@
+# This file is used to check what URLs may be accidential leaks.
+# Add all domains that you want to allow to the 'ok' section.
+ip_rules:
+# Allowed IP addresses
+- status: ok
+  glob:
+  - 127.0.0.1
+  - 0.0.0.0
+# Everything not listed here: bad
+- status: bad
+  glob: "*"
+
+hostname_rules:
+- status: ok
+  domain:
+  - vercel.com
+  - six-two.dev
+  - mkdocs.org
+  - squidfunk.github.io
+  - my-website.com
+  - github.com
+  - cheatsheetseries.owasp.org
+  - vercel.app
+  - pythonspeed.com
+  - ghcr.io
+  - cname.vercel-dns.com
+# False positives
+- status: ok
+  glob:
+  - requirements.in
+  - content.tabs.link
+# Anything not listed here is bad
+- status: bad
+  glob: "*"

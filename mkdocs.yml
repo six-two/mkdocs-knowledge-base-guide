@@ -7,6 +7,7 @@ extra:
         "Written by me": author
 
 markdown_extensions:
+  - footnotes
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -15,7 +16,6 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.keys
-
 
 plugins:
 - autotag:
@@ -77,3 +77,4 @@ theme:
             material: material/library
             plugin: material/puzzle
 
+use_directory_urls: false

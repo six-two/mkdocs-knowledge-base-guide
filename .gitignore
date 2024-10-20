@@ -1,5 +1,6 @@
 # The output directory of mkdocs
 site/
+public/
 
 # The python virtual environment
 venv/
