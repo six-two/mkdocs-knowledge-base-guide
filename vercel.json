@@ -1,6 +1,6 @@
 {
     "installCommand": "python3 -m ensurepip; python3 -m pip install -r requirements.txt",
-    "buildCommand": "bash -x ./build.sh PRIVATE",
+    "buildCommand": "PATH=\"$PATH:/python312/bin\" bash -x ./build.sh PRIVATE",
     "outputDirectory": "public",
     "routes": [
     ],
