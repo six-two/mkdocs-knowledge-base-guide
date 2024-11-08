@@ -4,3 +4,6 @@ public/
 
 # The python virtual environment
 venv/
+
+# Compiled python files (hooks)
+*.pyc

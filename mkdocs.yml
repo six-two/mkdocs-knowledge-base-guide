@@ -78,3 +78,5 @@ theme:
             plugin: material/puzzle
 
 use_directory_urls: false
+hooks:
+- hooks.py
