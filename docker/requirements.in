@@ -12,7 +12,10 @@ mkdocs-minify-plugin
 mkdocs-pagetree-plugin
 mkdocs-placeholder-plugin
 mkdocs-remove-sections-plugin
-mkdocs-spellcheck[all]
+# mkdocs-spellcheck[all]
 mkdocs-toggle-sidebar-plugin
 mkdocs-vercel-pw-plugin
 mkdocs>=1.4.0
+
+# The following packages require a compiler (which requires hundreds of MB):
+# - editdistpy, required by symspell, required by mkdocs-spellcheck[all]

@@ -20,16 +20,12 @@ charset-normalizer==3.4.0
     # via requests
 click==8.1.7
     # via mkdocs
-codespell==2.3.0
-    # via mkdocs-spellcheck
 colorama==0.4.6
     # via mkdocs-material
 cryptography==43.0.3
     # via mkdocs-encrypt-source-plugin
 csscompressor==0.9.5
     # via mkdocs-minify-plugin
-editdistpy==0.1.5
-    # via symspellpy
 find-and-check-hosts==0.1.5
     # via -r requirements.in
 ghp-import==2.1.0
@@ -106,8 +102,6 @@ mkdocs-placeholder-plugin==0.5.0.post1
     # via -r requirements.in
 mkdocs-remove-sections-plugin==0.1.0
     # via -r requirements.in
-mkdocs-spellcheck[all,codespell,symspellpy]==1.1.0
-    # via -r requirements.in
 mkdocs-toggle-sidebar-plugin==0.0.5
     # via -r requirements.in
 mkdocs-vercel-pw-plugin==0.1.0
@@ -151,8 +145,6 @@ six==1.16.0
     # via python-dateutil
 soupsieve==2.6
     # via beautifulsoup4
-symspellpy==6.7.8
-    # via mkdocs-spellcheck
 termcolor==2.5.0
     # via find-and-check-hosts
 urllib3==2.2.3

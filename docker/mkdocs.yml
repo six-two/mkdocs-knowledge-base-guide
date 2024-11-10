@@ -1,11 +1,56 @@
-site_name: Knowledge Base
+site_name: MkDocs Site
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
-- search
 - awesome-pages
 - badges
+- extract_listings:
+    javascript_search_file: assets/js/listing-search-plugin.js
 - ezlinks
+- minify:
+    htmlmin_opts:
+        remove_comments: true
+    minify_css: true
+    minify_html: true
+    minify_js: false
+- pagetree
+- remove_sections:
+    enabled: !ENV [REMOVE_PRIVATE, false]
+- search
 
 theme:
-  name: material
+    name: material
+    custom_dir: overrides
+    features:
+    - navigation.tabs
+    - content.code.copy
 
+    palette:
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
+
+# To make site browsable from file:// URLs
+use_directory_urls: false

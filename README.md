@@ -17,6 +17,6 @@ You can read the guide at <https://mkdocs-knowledge-base-guide.six-two.dev/> or 
 ## MkDocs Drawbacks
 
 MkDocs processes all sites sequentially.
-This can lead to slow build performance, which makes the live reloading nearly unusable in my opinion.
+This can lead to slow build performance, which makes the live reloading for large sites nearly unusable in my opinion.
 For my personal knowledge base, which contains over 700 pages with over 39k lines in total and uses many plugins, the build process takes around 40 seconds on a M3 Macbook.
 In the CI/CD pipeline, the build takes much longer.

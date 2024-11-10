@@ -19,10 +19,11 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.keys
-
+  - pymdownx.tabbed:
+      alternate_style: true
 
 theme:
     name: material
@@ -52,6 +53,16 @@ It configures:
 - Code listings with syntax highlighting and a copy button
 - Top layer navigation is moved to tabs at the top of the page, which makes it quicker to jump around.
 - Dark theme and toggle to get light theme
+- [Tabs](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/) that you can use with the following syntax:
+    ```markdown
+    === "Tab 1"
+
+        Some content
+    
+    === "Tab 2"
+
+        Different content
+    ```
 
 ## Hide "Made with Material for MkDocs"
 

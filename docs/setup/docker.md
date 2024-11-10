@@ -10,7 +10,7 @@ There are multiple reasons, why you may want to use mkdocs in docker instead of 
 
 For this project I have built a simple somewhat reusable container, which you can use as a starting point.
 
-The Dockerfile can be very simple:
+Alternatively you can write your own Dockerfile, which can start very simple:
 ```Dockerfile
 FROM python:slim
 COPY requirements.txt /tmp/requirements.txt

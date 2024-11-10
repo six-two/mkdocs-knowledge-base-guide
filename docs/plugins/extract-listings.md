@@ -1,4 +1,4 @@
-# extract-listings
+# extract_listings
 
 I|pypi|mkdocs-extract-listings-plugin|
 I|github|six-two/mkdocs-extract-listings-plugin|

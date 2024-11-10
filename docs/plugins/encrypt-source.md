@@ -1,4 +1,4 @@
-# encrypt-source
+# encrypt_source
 
 I|pypi|mkdocs-encrypt-source-plugin|
 I|github|six-two/mkdocs-encrypt-source-plugin|

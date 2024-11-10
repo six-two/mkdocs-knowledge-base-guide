@@ -5,7 +5,7 @@ USER 1001:1001
 WORKDIR /home/app/
 
 # Install my dependencies (mkdocs plugins)
-COPY requirements.txt .
+COPY docker/requirements.txt .
 RUN pip install --user --no-warn-script-location --no-cache-dir -r requirements.txt
 
 # Copy some fallpack files to /share, in case the user just mounts their markdown files or mounts them to a wrong directory
