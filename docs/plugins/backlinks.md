@@ -16,9 +16,11 @@ I|pypi|mkdocs-publisher|
 Looks like a nice plugin collection, but since I do not need most other function, just using it for backlinks looks overkill.
 It also depends on the material plugin and forces a minimum version, which can cause issues if you need an older (or patched) version of the theme.
 
-## Custom
+## mkdocs-backlinks-section-plugin
 
-See `hooks.py` in this repo.
-It is roughly inspired by https://github.com/danodic-dev/mkdocs-backlinks, but directly injects the backlinks into the page.
-Hopefully I soon have time to make it a proper plugin (with PyPI package and everything).
+I|github|six-two/mkdocs-backlinks-section-plugin|
+I|pypi|mkdocs-backlinks-section-plugin|
+
+This is my implementation.
+It is roughly inspired by <https://github.com/danodic-dev/mkdocs-backlinks>, but directly injects the backlinks into the page.
 

@@ -1,9 +1,8 @@
-beautifulsoup4 # for backlinks via hooks
 find-and-check-hosts
-lxml # for backlinks via hooks
 mkdocs-auto-tag-plugin
 mkdocs-awesome-pages-plugin
 mkdocs-badges
+mkdocs-backlinks-section-plugin
 mkdocs-encrypt-source-plugin
 mkdocs-extract-listings-plugin
 mkdocs-ezlinks-plugin

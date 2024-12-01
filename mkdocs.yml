@@ -27,6 +27,7 @@ plugins:
         "setup/**": "Setup"
 - awesome-pages
 - badges
+- backlinks_section
 - extract_listings:
     javascript_search_file: assets/js/listing-search-plugin.js
 - ezlinks
@@ -81,5 +82,3 @@ theme:
             plugin: material/puzzle
 
 use_directory_urls: false
-hooks:
-- hooks.py
