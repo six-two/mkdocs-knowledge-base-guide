@@ -12,22 +12,23 @@ cd "$( dirname "${BASH_SOURCE[0]}" )"
 # delete the output directories if they already exist
 rm -rf public
 
-# Set CICD_NO_VENV=yes in CI pipeline to skip venv usage
-if [[ -z "$CICD_NO_VENV" ]]; then
-    if [[ ! -f venv/bin/activate ]]; then
-        echo "[*] Please create a virtual python environment:"
-        echo python3 -m venv --clear --upgrade-deps venv
-        exit 1
-    fi
-
-    echo "[*] Using virtual python environment"
-    source venv/bin/activate
-
-    if [[ ! "$VIRTUAL_ENV" -ef venv ]]; then
-        echo "[-] \$VIRTUAL_ENV has unexpected value: $VIRTUAL_ENV"
-        echo "    Hint: If you moved this directory or did any other big modifications, please remove the $(realpath venv) directory"
-    fi
+# Even Vercel needs venvs now, since otherwise pip will not work
+# With --break-system-packages find-and-check-hosts does not get added to the path, and the specific directory (/uv/python/versions/cpython-3.12.13-linux-x86_64-gnu/bin) does not look stable.
+# So we just bite the bullet and use venv
+if [[ ! -f venv/bin/activate ]]; then
+    echo "[*] Creating a virtual python environment"
+    python3 -m venv --clear --upgrade-deps venv
 fi
+
+echo "[*] Using virtual python environment"
+source venv/bin/activate
+
+if [[ ! "$VIRTUAL_ENV" -ef venv ]]; then
+    echo "[-] \$VIRTUAL_ENV has unexpected value: $VIRTUAL_ENV"
+    echo "    Hint: If you moved this directory or did any other big modifications, please remove the $(realpath venv) directory"
+fi
+
+pip install -r requirements.txt
 
 if [[ -f ~/.leak-list ]]; then
     # Check for user specific leaks. Global file -> I do not need to upload the secrets to the cloud.

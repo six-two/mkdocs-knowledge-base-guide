@@ -24,6 +24,8 @@ hostname_rules:
   - pythonspeed.com
   - ghcr.io
   - cname.vercel-dns.com
+  - jaywhj.github.io
+  - fpgmaas.com
 # False positives
 - status: ok
   glob:

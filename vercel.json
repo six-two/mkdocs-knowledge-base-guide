@@ -1,6 +1,6 @@
 {
-    "installCommand": "python3 -m ensurepip; python3 -m pip install --break-system-packages -r requirements.txt",
-    "buildCommand": "PATH=\"$PATH:/python312/bin\" bash -x ./build.sh PRIVATE",
+    "installCommand": "python3 -m ensurepip",
+    "buildCommand": "bash -x ./build.sh PRIVATE",
     "outputDirectory": "public",
     "routes": [
     ],
