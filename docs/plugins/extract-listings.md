@@ -9,7 +9,7 @@ I wrote it after the normal search stopped being accurate after my knowledge bas
 
 ## Configuration
 
-Add plugin to `mkdocs.yml`
+Add plugin to `properdocs.yml`
 ```yaml
 plugins:
 - extract_listings:

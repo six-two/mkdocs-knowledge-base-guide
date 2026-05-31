@@ -31,12 +31,12 @@ mv -f "$DOWNLOAD_NAME.tar.gz" site/
 ```
 
 Then you can link `my-knowledgebase-download.tar.gz` in one of your pages as a download link.
-MkDocs will complain about the file missing during the build (since it is only created afterwards), but that is fine.
-If it annoys you too much, you can always commit an empty dummy file, so that it exists during the MkDocs build process.
+ProperDocs will complain about the file missing during the build (since it is only created afterwards), but that is fine.
+If it annoys you too much, you can always commit an empty dummy file, so that it exists during the ProperDocs build process.
 
 ## Example
 
 Here is the [download link](../my-knowledgebase-download.tar.gz) for this site.
 
 
-[^1]: It only works if you do not use directory URLs. With directory URLs pages will not be found. You may also want to add the `offline` plugin of Material for MkDocs to make the search work offline. Also some other features like Mermaid diagrams may be broken by default unless you manually do some workarounds.
+[^1]: It only works if you do not use directory URLs. With directory URLs pages will not be found. You may also want to add the `offline` plugin of Material for ProperDocs to make the search work offline. Also some other features like Mermaid diagrams may be broken by default unless you manually do some workarounds.

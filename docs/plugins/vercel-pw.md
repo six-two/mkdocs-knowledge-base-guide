@@ -19,7 +19,7 @@ In my setup there is a `private/vercel.json` and a `shared/vercel.json`.
 There are two Vercel projects, which use the same repository.
 But each of them uses a different `vercel.json` and can have different environment variables, etc.
 
-In my `mkdocs.yml` I then use the `vercel_pw` plugin twice to update both `vercel.json` files:
+In my `properdocs.yml` I then use the `vercel_pw` plugin twice to update both `vercel.json` files:
 
 ```yaml
 plugins:

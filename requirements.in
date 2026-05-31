@@ -1,4 +1,5 @@
 find-and-check-hosts
+mkdocs<=1.6.1 # Prevent mkdocs 2.0 in the future
 mkdocs-auto-tag-plugin
 mkdocs-awesome-pages-plugin
 mkdocs-badges
@@ -6,7 +7,7 @@ mkdocs-backlinks-section-plugin
 mkdocs-encrypt-source-plugin
 mkdocs-extract-listings-plugin
 mkdocs-ezlinks-plugin
-mkdocs-material
+mkdocs-materialx
 mkdocs-minify-plugin
 mkdocs-pagetree-plugin
 mkdocs-placeholder-plugin
@@ -14,4 +15,4 @@ mkdocs-remove-sections-plugin
 mkdocs-spellcheck[all]
 mkdocs-toggle-sidebar-plugin
 mkdocs-vercel-pw-plugin
-mkdocs>=1.4.0
+properdocs

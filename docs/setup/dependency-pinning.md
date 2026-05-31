@@ -13,7 +13,7 @@ pipx install pip-tools
 ```
 
 Then make a list of your dependency packages (without pinning) and call it `requirements.in`.
-If you have constraints (like use `mkdocs<=1.6.0`), you should include them in this file.
+If you have constraints (like use `mkdocs<=1.6.1`), you should include them in this file.
 But usually I only need them if the latest version of a package has a bug that I need to avoid.
 
 From the `requirements.in` you can create a `requirements.txt` which pins the latest versions allowed by the `requirements.in`.

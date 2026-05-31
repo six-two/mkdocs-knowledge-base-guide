@@ -50,10 +50,10 @@ Similarly it flags most parts of URLs (`https`, `www`, `io`), so you need to add
 Build times can grow quite a lot for large knowledge bases and checking all pages for typos slows it down further.
 Plus for me typo hunting is not something I do with every build.
 Thus I like to use this plugin in a secondary config.
-This is another neat feature of mkdocs: you can have multiple configuration files for different purposes.
-While by default `mkdocs.yml` is used, you can create more files like `mkdocs-spellcheck.yml` and use them with:
+This is another neat feature of ProperDocs: you can have multiple configuration files for different purposes.
+While by default `properdocs.yml` is used, you can create more files like `properdocs-spellcheck.yml` and use them with:
 ```bash
-mkdocs serve -f mkdocs-spellcheck.yml
+properdocs serve -f properdocs-spellcheck.yml
 ```
 
 This enables you to make faster test builds by having a test configuration file that removes nice-to-have-but-not-critical plugins like spellcheck, minify, pagetree, extract-listings, etc.

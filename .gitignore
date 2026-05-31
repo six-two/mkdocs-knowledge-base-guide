@@ -1,4 +1,4 @@
-# The output directory of mkdocs
+# The output directory of properdocs
 site/
 public/
 
@@ -7,3 +7,6 @@ venv/
 
 # Compiled python files (hooks)
 *.pyc
+
+# macOS
+.DS_Store

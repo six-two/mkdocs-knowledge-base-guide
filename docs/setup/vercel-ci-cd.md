@@ -9,7 +9,7 @@ To configure vercel you can add a `vercel.json` with the following contents to t
 ```json
 {
     "installCommand": "python3 -m ensurepip; python3 -m pip install -r requirements.txt",
-    "buildCommand": "python3 -m mkdocs build",
+    "buildCommand": "python3 -m properdocs build",
     "outputDirectory": "site",
     "github": {
         "silent": true

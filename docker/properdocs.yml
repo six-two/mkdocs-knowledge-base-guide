@@ -1,10 +1,4 @@
-extra:
-    # Associating the tags with the tag IDs
-    tags:
-        "Material for MkDocs": material
-        Plugin: plugin
-        Setup: folder
-        "Written by me": author
+site_name: ProperDocs Site
 
 markdown_extensions:
   - footnotes
@@ -20,14 +14,8 @@ markdown_extensions:
       alternate_style: true
 
 plugins:
-- autotag:
-    globs:
-        "plugins/**": "Plugin"
-        "plugins/material/**": "Material for MkDocs"
-        "setup/**": "Setup"
 - awesome-pages
 - badges
-- backlinks_section
 - extract_listings:
     javascript_search_file: assets/js/listing-search-plugin.js
 - ezlinks
@@ -38,18 +26,12 @@ plugins:
     minify_html: true
     minify_js: false
 - pagetree
-- placeholder
-- remove_sections
+- remove_sections:
+    enabled: !ENV [REMOVE_PRIVATE, false]
 - search
-- tags:
-    tags_file: plugins/material/tags.md
-
-repo_url: https://github.com/six-two/mkdocs-knowledge-base-guide
-
-site_name: MkDocs Knowledge Base Guide
 
 theme:
-    name: material
+    name: materialx
     custom_dir: overrides
     features:
     - navigation.tabs
@@ -70,15 +52,5 @@ theme:
             icon: material/brightness-4
             name: Switch to light mode
 
-
-    # Custom tag icons: https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#tag-icons-and-identifiers
-    icon:
-        # Associating tag IDs with icons
-        tag:
-            author: octicons/person-fill-24
-            default: material/tag
-            folder: material/folder
-            material: material/library
-            plugin: material/puzzle
-
+# To make site browsable from file:// URLs
 use_directory_urls: false

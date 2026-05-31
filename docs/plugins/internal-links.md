@@ -2,7 +2,7 @@
 
 L|Plugins for links & references|https://github.com/mkdocs/catalog?tab=readme-ov-file#-links--references|
 
-There are many plugins that simplify the linking of pages in mkdocs.
+There are many plugins that simplify the linking of pages in ProperDocs.
 The reason why you want them is that by default you have to do relative links to files (like `../setup/quickstart.md`).
 Absolute links also work, but lead to warnings in past versions and may break if the page is not hosted at `/` (for example if you host it at `https://my-website.com/blog/`).
 
@@ -17,7 +17,7 @@ I|github|orbikm/mkdocs-ezlinks-plugin|
 
 I use ezlinks and it works, but it seems no longer maintained.
 So I recommend you do your own research for a good linking plugin.
-You can check in the [Links & references](https://github.com/mkdocs/catalog?tab=readme-ov-file#-links--references) section of the plugin catalog.
+You can check in the [Links & references](https://github.com/ProperDocs/catalog?tab=readme-ov-file#-links--references) section of the plugin catalog.
 
 Usually I enable the additional linking types:
 ```yaml

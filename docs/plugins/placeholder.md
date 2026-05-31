@@ -33,7 +33,7 @@ placeholders:
   WLAN_INTERFACE: wlan0
 ```
 
-A thing to know about this plugin is that you set most configurations via its configuration file `placeholder-plugin.yaml` and not via the `plugins` section of your `mkdocs.yml`.
+A thing to know about this plugin is that you set most configurations via its configuration file `placeholder-plugin.yaml` and not via the `plugins` section of your `properdocs.yml`.
 
 Then you can use it in the page by specifying it surrounded by lowercase `x` (like `xPLACEHOLDER_NAME_1x`).
 An user can click on any location where you use the placeholder, to assign a new value.

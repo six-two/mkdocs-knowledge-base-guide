@@ -12,7 +12,7 @@ L|Documentation|https://mkdocs-auto-tag-plugin.six-two.dev/|
 I wrote this plugin to automatically tag files based on their folder.
 So instead of tagging hundreds of pages manually, I can at least give them rough tags based on their location.
 In this documentation the tags `Plugin` and `Setup` are automatically applied by it.
-This can be done by adding installing the plugin and adding the following to your `mkdocs.yml`:
+This can be done by adding installing the plugin and adding the following to your `properdocs.yml`:
 ```yaml
 plugins:
 - autotag:

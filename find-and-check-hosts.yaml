@@ -15,7 +15,7 @@ hostname_rules:
   domain:
   - vercel.com
   - six-two.dev
-  - mkdocs.org
+  - properdocs.org
   - squidfunk.github.io
   - my-website.com
   - github.com

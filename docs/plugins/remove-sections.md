@@ -20,12 +20,12 @@ Then you can set or omit the variable during the build process to choose the ver
 
 === "Censored version"
     ```bash
-    REMOVE_PRIVATE=true python3 -m mkdocs build
+    REMOVE_PRIVATE=true python3 -m properdocs build
     ```
 
 === "Uncensored version"
     ```bash
-    python3 -m mkdocs build
+    python3 -m properdocs build
     ```
 
 For deployment, you can have two CI pipelines.

@@ -56,10 +56,10 @@ fi
 
 set -e # exit on error
 
-# Run the normal mkdocs build
-# Invoke like this to work correctly on my mac (mkdocs has hardcoded interpreter to XCode version of python, which is too old for some of my code)
-echo "[*] Building website with mkdocs"
-SITE_VARIANT="$1" python3 -m mkdocs build -d public
+# Run the normal properdocs build
+# Invoke like this to work correctly on my mac (properdocs has hardcoded interpreter to XCode version of python, which is too old for some of my code)
+echo "[*] Building website with properdocs"
+SITE_VARIANT="$1" python3 -m properdocs build -d public
 
 DOWNLOAD_NAME=my-knowledgebase-download
 if [[ "$1" == PRIVATE ]]; then

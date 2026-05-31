@@ -7,7 +7,7 @@ mkdocs-badges
 mkdocs-encrypt-source-plugin
 mkdocs-extract-listings-plugin
 mkdocs-ezlinks-plugin
-mkdocs-material
+mkdocs-materialx
 mkdocs-minify-plugin
 mkdocs-pagetree-plugin
 mkdocs-placeholder-plugin
@@ -15,7 +15,8 @@ mkdocs-remove-sections-plugin
 # mkdocs-spellcheck[all]
 mkdocs-toggle-sidebar-plugin
 mkdocs-vercel-pw-plugin
-mkdocs>=1.4.0
+mkdocs<=1.6.1
+properdocs
 
 # The following packages require a compiler (which requires hundreds of MB):
 # - editdistpy, required by symspell, required by mkdocs-spellcheck[all]
