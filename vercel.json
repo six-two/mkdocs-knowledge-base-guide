@@ -1,5 +1,5 @@
 {
-    "installCommand": "python3 -m ensurepip",
+    "installCommand": "",
     "buildCommand": "bash -x ./build.sh PRIVATE",
     "outputDirectory": "public",
     "routes": [
